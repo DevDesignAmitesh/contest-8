@@ -99,5 +99,3 @@ export function chunkToArray(chunks: Chunks) {
   
   return dataToReturn;
 }
-
-getDocs("./src/dataset", [])
