@@ -2,6 +2,8 @@
 
 A RAG chat app: PDF transcripts/policies are embedded into ChromaDB, and a chat endpoint answers questions against them using OpenAI.
 
+Assignment: [AI RAG Case Intelligence System](https://brindle-goal-102.notion.site/AI-RAG-Case-Intelligence-System-3c946b36b2e980a5b16be77ddeb8e640)
+
 ## Architecture
 
 - **backend/** — Express + Bun server. `GET /chat?query=...` pulls relevant chunks from ChromaDB and answers via OpenAI.
