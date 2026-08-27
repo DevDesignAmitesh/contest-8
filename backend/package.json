@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "seed": "bun run ./src/upload-service/handle-upload.ts",
+    "dev": "bun run src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@chroma-core/openai": "^0.1.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/pdf-parse": "^1.1.5",
+    "chromadb": "^3.5.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "openai": "^7.7.0",
+    "pdf-parse": "^2.4.5"
+  }
+}

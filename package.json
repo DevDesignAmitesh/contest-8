@@ -1,0 +1,14 @@
+{
+  "name": "contest-8",
+  "private": true,
+  "scripts": {
+    "setup": "cd backend && bun install && cd ../frontend && bun install && cd .. && docker compose -f backend/docker-compose.yml up -d",
+    "seed": "cd backend && bun run seed",
+    "backend": "cd backend && bun run dev",
+    "frontend": "cd frontend && bun run dev",
+    "dev": "bun run setup && bun run seed && concurrently -n backend,frontend -c blue,green \"bun run backend\" \"bun run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
