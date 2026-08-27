@@ -9,10 +9,12 @@ A RAG chat app: PDF transcripts/policies are embedded into ChromaDB, and a chat 
 - **ChromaDB** — vector store, run via Docker.
 - **backend/src/dataset/** — source PDFs seeded into Chroma.
 
-```
-architecture/user-convo.png     – chat request flow
-architecture/seeding-data.png   – seeding flow
-```
+<table>
+<tr>
+<td align="center"><img src="architecture/seeding-data.png" width="360"><br><sub>seeding flow</sub></td>
+<td align="center"><img src="architecture/user-convo.png" width="360"><br><sub>chat request flow</sub></td>
+</tr>
+</table>
 
 ## Prerequisites
 
